@@ -1,0 +1,139 @@
+quotas:
+  - cluster: core-0.2
+    groups:
+      - group: bosemix
+        cpu: 16
+        mem: 64 GiB
+        security-distribution-list-prefix: galapagos-bose-mix
+
+      - group: cloudops
+        cpu: 16
+        mem: 4 GiB
+        security-distribution-list-prefix: galapagos-cloudops
+        
+      - group: wellness
+        cpu: 10
+        mem: 128 GiB
+        security-distribution-list-prefix: galapagos-wellnessdatasci
+        
+      - group: centraldata
+        cpu: 25
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-central-data-platform
+      
+      - group: pce-concepts-test
+        cpu: 5
+        mem: 32 GiB
+        security-distribution-list-prefix: galapagos-pce-concepts-test
+        
+      - group: ops-stage
+        cpu: 425
+        mem: 1024 GiB
+        security-distribution-list-prefix: galapagos-cloudops
+  
+      - group: operations
+        cpu: 15
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-apis
+  
+      - group: ota
+        cpu: 55
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-ota
+        
+      - group: passport
+        cpu: 100
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-passport
+        
+      - group: pytest
+        cpu: 5
+        mem: 1024 GiB
+        security-distribution-list-prefix: galapagos-cloudops
+        
+      # Jim Lambert
+      - group: identity
+        cpu: 180
+        mem: 512 GiB
+        security-distribution-list-prefix: galapagos-identity
+        
+      # BMX (Chris Wurts Team)
+      - group: content
+        cpu: 80
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-content
+        
+      - group: iot
+        cpu: 60
+        mem: 356 GiB  
+        security-distribution-list-prefix: galapagos-iot
+      
+      - group: dataservices
+        cpu: 100
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-dataservices
+
+      - group: dataplatform
+        cpu: 15
+        mem: 64 GiB
+        security-distribution-list-prefix: galapagos-dataplatform
+ 
+      - group: alexa
+        cpu: 40
+        mem: 256 GiB  
+      
+      - group: voice
+        cpu: 80
+        mem: 256 GiB 
+        security-distribution-list-prefix: galapagos-voice
+        
+      - group: trio
+        cpu: 138
+        mem: 624 GiB
+        security-distribution-list-prefix: galapagos-trio
+        
+      - group: discovery
+        cpu: 60
+        mem: 64 GiB
+        
+      - group: webdev
+        cpu: 12
+        mem: 32 GiB
+        
+      - group: erictest
+        cpu: 32
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-cloudops
+        
+      - group: metrictest
+        cpu: 8
+        mem: 20 GiB
+  
+      - group: control
+        cpu: 60
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-control
+        
+      - group: retaildemo
+        cpu: 40
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-retaildemo
+      
+      - group: fortis
+        cpu: 5
+        mem: 256 GiB
+        security-distribution-list-prefix: galapagos-fortis
+        
+      - group: butler
+        cpu: 12
+        mem: 32 GiB
+  
+   
+    services:
+      - service: svc-pytest
+        cpu: 5
+        mem: 500 MiB
+        
+    defaults:
+      mem: 2048 MiB
+      cpu: 0.6
